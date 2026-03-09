@@ -33,7 +33,7 @@
 
 \title{Compositional Transfer in Neural World Models\\via Symbolic Law Discovery}
 
-\author{\name Ali Subhan \email \MakeLowercase{alisubhangenius@gmail.com} \\
+\author{\name Ali Subhan \email{alisubhangenius@gmail.com} \\
        \addr Independent Researcher \\
        Lahore, Pakistan}
 
@@ -44,7 +44,8 @@
 % ============================================================
 % ABSTRACT
 % ============================================================
-We leverage isolated physical environments as deterministic testbeds to study whether neural world models can truly internalize and compose modular physical invariants. While deep networks excel at modeling high-dimensional correlations, robust physical understanding requires representations that obey the linear superposition of vector fields. In this paper, we demonstrate that neural models trained via \emph{residual state prediction} on isolated systems—such as gravity or Hookean elasticity—can be composed zero-shot to predict combined environments never encountered during training. Our results show that this modular composition achieves accuracy comparable to structural baselines like Neural ODEs trained on $100{,}000$ target transitions, while monolithic MLPs face catastrophic out-of-distribution divergence. Furthermore, we extract interpretable symbolic laws via sparse regression, achieving $4.7\times$ higher composition accuracy. To validate scalability, we demonstrate the sufficiency of tangent-space mapping for the superposition of additive vector fields and prove that in highly non-linear $2$D Orbital Mechanics, the zero-shot modular ensemble ($0.11 \times 10^{-4}$ MSE) statistically outperforms $100$K-data monolithic baselines ($0.19 \times 10^{-4}$). These results establish a mathematically rigorous framework for structured world modeling where knowledge is accumulated asynchronously and composed algebraically.\footnote{The complete source code is available at: \url{https://github.com/KNIGHT-ASK/Compositional-Transfer-in-Neural-World-Models-via-Symbolic-Law-Discovery-Complete-Source-Code}}
+\begin{abstract}
+We leverage isolated physical environments as deterministic testbeds to study whether neural world models can truly internalize and compose modular physical invariants. While deep networks excel at modeling high-dimensional correlations, robust physical understanding requires representations that obey the linear superposition of vector fields. In this paper, we demonstrate that neural models trained via \emph{residual state prediction} on isolated systems---such as gravity or Hookean elasticity---can be composed zero-shot to predict combined environments never encountered during training. Our results show that this modular composition achieves accuracy comparable to structural baselines like Neural ODEs trained on $100{,}000$ target transitions, while monolithic MLPs face catastrophic out-of-distribution divergence. Furthermore, we extract interpretable symbolic laws via sparse regression, achieving $4.7\times$ higher composition accuracy. To validate scalability, we demonstrate the sufficiency of tangent-space mapping for the superposition of additive vector fields and prove that in highly non-linear $2$D Orbital Mechanics, the zero-shot modular ensemble ($0.11 \times 10^{-4}$ MSE) statistically outperforms $100$K-data monolithic baselines ($0.19 \times 10^{-4}$). These results establish a mathematically rigorous framework for structured world modeling where knowledge is accumulated asynchronously and composed algebraically.\footnote{The complete source code is available at: \url{https://github.com/KNIGHT-ASK/Compositional-Transfer-in-Neural-World-Models-via-Symbolic-Law-Discovery-Complete-Source-Code}}
 \end{abstract}
 
 \begin{keywords}
