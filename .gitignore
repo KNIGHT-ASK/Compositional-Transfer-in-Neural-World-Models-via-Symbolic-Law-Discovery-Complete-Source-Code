@@ -1,0 +1,32 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.env
+.venv
+.vscode/
+.idea/
+.DS_Store
+
+# Research Artifacts
+paper/*.log
+paper/*.aux
+paper/*.out
+paper/*.toc
+paper/*.pdf
+!paper/paper.tex
+!paper/figures/
+
+# Local task tracking
+.gemini/
+brain/
+task.md
+implementation_plan.md
+walkthrough.md
+final_review.md
+jmlr_optimization_plan.md
+jmlr_2d_theoretical_plan.md
+peer_review.md
