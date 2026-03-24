@@ -10,31 +10,33 @@
 
 \begin{document}
 
-\begin{letter}{To the Editors of the \\ Journal of Machine Learning Research (JMLR)}
+\begin{letter}{To the Editors \\ Journal of Machine Learning Research (JMLR)}
 
-\opening{Dear Editors,}
+\opening{Dear JMLR Editorial Board,}
 
-I am pleased to submit our manuscript, \textbf{``Compositional Transfer in Neural World Models via Symbolic Law Discovery,''} for consideration as a Research Paper in the \emph{Journal of Machine Learning Research}.
+I wish to submit my manuscript titled \textbf{``Compositional Transfer in Neural World Models via Symbolic Law Discovery''} for consideration as an original research article in the Journal of Machine Learning Research.
 
-This work addresses a foundational challenge in Artificial General Intelligence: the ability of neural world models to internalize and compose modular physical invariants. While contemporary architectures excel at interpolating within trained distributions, they fundamentally lack the capacity for zero-shot composition---the algebraic superposition of independently learned dynamics to predict unseen multi-physics environments.
+\textbf{Scientific Case:}\\
+This paper addresses the foundational problem of zero-shot compositional transfer in physical world modeling. While existing monolithic methods like Physics-Informed Neural Operators (PINO) and Graph Neural Networks focus on high-fidelity interpolation within specific environments, they suffer from mathematical entanglement that precludes true algebraic composition. This work introduces the principle of \emph{Tangent-Space Residual Superposition}. By constraining neural dynamics models to learn physically isolated force-density residuals, this paper proves that deep networks can internalize independent physical laws (e.g., inverse-square gravity, linear spring limits, viscous drag) and seamlessly construct chaotic, unseen multi-physics environments zero-shot.
 
-\textbf{Core Contributions and Novelty:}
-\begin{enumerate}
-    \item \textbf{Framework of Tangent-Space Superposition:} We demonstrate that by framing learning as the prediction of tangent-space residuals, standard neural networks can internalize isolated physical laws that compose algebraically with nearly zero error in target environments never encountered during training.
-    \item \textbf{Causal Discovery of Gradient Interference:} Using a novel gradient alignment diagnostic, we provide empirical proof of why monolithic scaling fails in high dimensions. We identify a state of \emph{Active Gradient Conflict} ($\rho \approx -0.99$) between competing physical tasks, establishing modularity not as a preference, but as a mathematical necessity for physical world modeling.
-    \item \textbf{Performance and Rigor:} Our framework benchmarks at $99.25\%$ accuracy in symbolic law recovery (via SINDy) and achieves a \textbf{6.5x lower trajectory MSE} than monolithic baselines on chaotic 12D orbital manifolds.
-    \item \textbf{Benchmark vs. Neural Operators:} We provide a head-to-head comparison with Physics-Informed Neural Operators (PINO), proving our framework is \textbf{2.5x faster} and uniquely capable of additive operator composition where PINO-style solution operators fail.
-\end{enumerate}
+Furthermore, the manuscript demonstrates this utility by uncovering a rigorous \emph{Baseline Washout} scaling law ($\text{Gain} = 1.546 \cdot D^{-0.422}$). It provides analytical proof that monolithic architectures actively sacrifice target mechanisms for aggregate test-set expediency as phase-space dimensionality expands ($D=12$). By integrating SINDy (Sparse Identification of Nonlinear Dynamics) backends directly into our causal modules, the framework not only achieves a 1.63x predictive advantage over PINO but natively extracts the exact symbolic PDEs underlying the system ($99.25\%$ empirical accuracy), resolving the traditional trade-off between flexible neural world models and interpretable white-box science. I believe this work significantly advances the subfield of scientific machine learning by demonstrating that rigorous modular constraints are mathematically necessary for generalizing physics outside the training manifold.
 
-Given the intersection of causal representation learning, scientific machine learning, and symbolic identification, we believe this manuscript is highly suited for JMLR. We provide an open-source ``Elite Validation Suite'' to ensure the full reproducibility of all reported metrics.
-
-\textbf{Submission Declarations:}
+\textbf{Required Disclosures:}
 \begin{itemize}
-    \item This manuscript is original, has not been published elsewhere, and is not currently under consideration by another journal.
-    \item There are no conflicts of interest to disclose.
+    \item \textbf{Overlap:} This manuscript represents entirely novel, original research. It is not an extension of any prior conference publication, has not been published elsewhere, and is not currently under consideration by another journal.
+    \item \textbf{Consent:} I, as the sole author, have reviewed and approved this submission to JMLR.
+    \item \textbf{Conflicts:} I declare no financial or personal conflicts of interest. Specifically, I have not collaborated with any JMLR Action Editors in the past 5 years.
 \end{itemize}
 
-We thank you and the reviewers for your time and consideration of our work.
+\textbf{Suggestions:}
+\begin{itemize}
+    \item \textbf{Suggested Action Editors:} Bernhard Schölkopf (Causal Representation Learning), Kun Zhang (Causal Discovery), or Finale Doshi-Velez (Interpretability/Symbolic Methods).
+    \item \textbf{Suggested Reviewers:} Miles Cranmer (SINDy / Symbolic Physics), Peter Battaglia (Physics \& Graph Networks), taking care to avoid any direct institutional conflicts.
+\end{itemize}
+
+\textbf{Keywords:} Compositional Generalization, Causal Representation Learning, Scientific Machine Learning, Symbolic Law Discovery, Neural World Models.
+
+Thank you for your time and consideration of this work.
 
 \closing{Sincerely,}
 
